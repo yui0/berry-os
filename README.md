@@ -1,12 +1,25 @@
-# BerryOS
+# Berry OS
+
+[![GPL2 License](https://img.shields.io/badge/license-GPL2-blue.svg?style=flat)](LICENSE)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yui0/berry-os)
+![Lines of code](https://img.shields.io/tokei/lines/github/yui0/berry-os)
+![GitHub Repo stars](https://img.shields.io/github/stars/yui0/berry-os?style=social)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/yui0/berry-os)
 
 The android emulator based on android-x86 environment via QEMU and VirGL with libhoudini support.
 
 ## Features
 
+* Android 9 Pie
+* x86-based
+* Based on Android-x86 and Bliss OS
 * libhoudini support (arm64, arm)
 * Read + Write system
 * [MicroG](https://microg.org/download.html)
+
+## Download
+
+* RPM [https://github.com/yui0/berry-os/releases](https://github.com/yui0/berry-os/releases)
 
 ## How to install QEMU-VirGL on Fedora 37
 
@@ -29,44 +42,20 @@ dnf install android-tools
 ## How to use
 
 ```
-sys=system.img
-ram=ramdisk.img
-initrd=initrd.img
-kernel=kernel
-
-qemu-system-x86_64 \
--enable-kvm \
--M q35 \
--m 8192 -smp 2 -cpu host \
--device AC97 \
--net nic,model=virtio-net-pci -net user,hostfwd=tcp::4444-:5555 \
--machine vmport=off \
--usb \
--device usb-tablet \
--device usb-kbd \
--device virtio-vga-gl -display gtk,grab-on-hover=on,gl=on \
--drive index=0,if=virtio,id=system,file=${sys},format=raw \
--drive index=1,if=virtio,id=ramdisk,file=${ramdisk.img},format=raw \
--drive index=2,if=virtio,id=data,file=${data.img},format=raw \
--initrd ${initrd} \
--kernel ${kernel} -append "root=/dev/ram0 RAMDISK=vdb DATA=vdc SETUPWIZARD=0"
-
-adb connect localhost:4444
+$ berry-os
 ```
 
 * Connect Wi-Fi to VirtWifi
-* Check Google device registration, Cloud Messaging, Google SafetyNet by MicroG
+* If use MicroG, check Google device registration, Cloud Messaging, Google SafetyNet
+* If needed, enable native bridge
 
-Enable native bridge
-
-##
+## List of compatible applications
 
 * Genshin Impact
-* Sonic Forces
+* alice gear aegis
 * Evertale
-* TempleRun
 
-##
+## Tips
 
 ```default.prop
 ro.adb.secure=1
