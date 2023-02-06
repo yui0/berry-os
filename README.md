@@ -34,6 +34,7 @@ qemu-device-display-virtio-gpu-pci \
 qemu-device-display-virtio-gpu \
 qemu-device-display-virtio-gpu-gl \
 qemu-device-display-virtio-gpu-ccw \
+qemu-audio-alsa \
 virglrenderer
 
 dnf install android-tools
@@ -67,6 +68,11 @@ $ berry-os
 * Astral Fable
 * AVABEL Online
 * Evertale
+
+## Screenshots
+
+![Soul Destiny](SoulDestiny.png "Soul Destiny")
+![AstralFable](AstralFable.png "AstralFable")
 
 ## Tips
 

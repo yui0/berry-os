@@ -20,6 +20,7 @@ qemu-system-x86_64 \
 -device AC97 \
 -net nic,model=virtio-net-pci -net user,hostfwd=tcp::4444-:5555 \
 -machine vmport=off \
+-audiodev alsa,id=snd0,out.dev=hw:0.0 \
 -usb \
 -device usb-tablet \
 -device usb-kbd \

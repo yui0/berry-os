@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <!-- reset.css destyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__logo">LOGO</div>
+    </header>
+
+    <!-- マークダウン記述箇所 -->
+    <main class="l-main-editer js-markdown-editer">
+# h1タイトル
+
+## h2タイトルタイトルタイトルタイトル
+
+### h3タイトルタイトルタイトルタイトル
+
+ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。
+ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。
+
+強調したい箇所は**このように強調させる**ことも可能。
+
+- リスト1
+- リスト2
+    - リスト2-1
+    - リスト2-2
+    - リスト2-3
+- リスト3
+- リスト4
+
+リンクは[リンクテキスト](https://yurukei-career.com/)のように記載。引用ブロックは以下。
+
+> 引用ブロックはこのようになる。
+改行もこのように組み込まれる。
+
+## テーブル
+
+| No | 名前 | 年齢 |
+|---:|----:|:----:|
+| 1  | 山田 |  24 |
+| 2  | 田中 |  48 |
+
+---
+
+HTMLをそのまま埋め込むことも可能。
+
+<h2>HTMLタイプのh2テキストとテーブル</h2>
+
+<table>
+  <tr>
+    <th>No</th>
+    <th>名前</th>
+    <th>年齢</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>山田</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>田中</td>
+    <td>48</td>
+  </tr>
+</table>
+
+    </main>
+    <!-- /マークダウン記述箇所 -->
+
+    <footer class="l-footer">
+      <small class="l-footer__small">Copyright &copy;&nbsp; 2023 Yuichiro Nakada. All rights reserved.</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.2.2/markdown-it.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

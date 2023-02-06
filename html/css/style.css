@@ -1,0 +1,111 @@
+/* ──────────────────────────────
+  * base
+  ────────────────────────────── */
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+/* aタグ */
+a:not([class]) {
+  color: #006cd8;
+  text-decoration: none;
+}
+a:not([class]):hover {
+  color: #2f90f4;
+  text-decoration: underline;
+}
+
+/* ──────────────────────────────
+  * レイアウト
+  ────────────────────────────── */
+.l-header,
+.l-footer {
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.l-main-editer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+/* ──────────────────────────────
+  * エディタ内のスタイル
+  ────────────────────────────── */
+.l-main-editer > * {
+  margin: 16px 0;
+}
+/* 見出し */
+.l-main-editer > h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.l-main-editer > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.l-main-editer > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+/* リスト */
+.l-main-editer > ul,
+.l-main-editer > ol,
+.l-main-editer > ul > li > ul,
+.l-main-editer > ul > li > ol {
+  padding-left: 24px;
+}
+.l-main-editer > ul,
+.l-main-editer > ul > li > ul,
+.l-main-editer > ol > li > ul {
+  list-style: disc;
+}
+.l-main-editer > ol,
+.l-main-editer > ol > li > ol,
+.l-main-editer > ul > li > ol {
+  list-style: decimal;
+}
+/* 引用ブロック */
+.l-main-editer > blockquote {
+  padding: 20px;
+  background-color: #efefef;
+}
+/* 区切り */
+.l-main-editer > hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* 表 */
+.l-main-editer > table {
+  border-collapse: collapse;
+  border: solid 2px #333;
+}
+.l-main-editer > table th,
+.l-main-editer > table td {
+  padding: 8px 10px;
+}
+.l-main-editer > table th {
+  border: solid 1px #333;
+  background-color: #efefef;
+}
+.l-main-editer > table td {
+  border: dashed 1px #333;
+}
+/* コード */
+.l-main-editer p code{
+    background-color: #efefef;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+.l-main-editer pre{
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 16px;
+}
