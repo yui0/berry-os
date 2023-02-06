@@ -1,10 +1,10 @@
 # Berry OS
 
-[![GPL2 License](https://img.shields.io/badge/license-GPL2-blue.svg?style=flat)](LICENSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/yui0/berry-os?style=social)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yui0/berry-os)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yui0/berry-os)
-![GitHub Repo stars](https://img.shields.io/github/stars/yui0/berry-os?style=social)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/yui0/berry-os)
+[![GPL2 License](https://img.shields.io/badge/license-GPL2-blue.svg?style=flat)](LICENSE)
 
 The android emulator based on android-x86 environment via QEMU and VirGL with libhoudini support.
 
@@ -15,7 +15,7 @@ The android emulator based on android-x86 environment via QEMU and VirGL with li
 * Based on Android-x86 and Bliss OS
 * libhoudini support (arm64, arm)
 * Read + Write system
-* [MicroG](https://microg.org/download.html)
+* [Open GApps](https://opengapps.org/), [MicroG](https://microg.org/download.html) support
 
 ## Download
 
@@ -42,6 +42,7 @@ dnf install android-tools
 ## How to use
 
 ```
+$ sudo rpm -Uvh berry-os*rpm
 $ berry-os
 ```
 
@@ -52,7 +53,19 @@ $ berry-os
 ## List of compatible applications
 
 * Genshin Impact
+* Ys VI
+* Knights Chronicle
 * alice gear aegis
+* Alchemia Story
+* Crash Fever
+* Soul Destiny
+* Abyss
+* Epic Seven
+* Guitar Girl
+
+* Arcaea
+* Astral Fable
+* AVABEL Online
 * Evertale
 
 ## Tips
@@ -66,6 +79,11 @@ persist.sys.usb.config=mtp
 
 ```build.prop
 ro.build.type=user
+ro.product.model=Nexus S
+ro.product.manufacturer=samsung
+
+# Enable faster boot
+ro.config.hw_quickpoweron=true
 ```
 
 ## ref.
