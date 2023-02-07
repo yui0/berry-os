@@ -71,8 +71,12 @@ $ berry-os
 
 ## Screenshots
 
-![Soul Destiny](SoulDestiny.png "Soul Destiny")
-![AstralFable](AstralFable.png "AstralFable")
+![Soul Destiny](img/SoulDestiny.png "Soul Destiny")
+![Astral Fable](img/AstralFable.png "Astral Fable")
+![Alchemia Story](img/AlchemiaStory.png "Alchemia Story")
+![Caravan Stories](img/CaravanStories.png "Caravan Stories")
+![Caravan Stories](img/CaravanStories2.png "Caravan Stories")
+
 
 ## Tips
 
@@ -90,6 +94,10 @@ ro.product.manufacturer=samsung
 
 # Enable faster boot
 ro.config.hw_quickpoweron=true
+
+# DNS
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
 ```
 
 ## ref.
