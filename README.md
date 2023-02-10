@@ -55,13 +55,16 @@ $ berry-os
 
 * Genshin Impact
 * Ys VI
+* Dragonicle
 * Knights Chronicle
 * alice gear aegis
 * Alchemia Story
+* Caravan Stories
 * Crash Fever
 * Soul Destiny
 * Abyss
 * Epic Seven
+* Echocalypse
 * Guitar Girl
 
 * Arcaea
@@ -76,6 +79,7 @@ $ berry-os
 ![Alchemia Story](img/AlchemiaStory.png "Alchemia Story")
 ![Caravan Stories](img/CaravanStories.png "Caravan Stories")
 ![Caravan Stories](img/CaravanStories2.png "Caravan Stories")
+![Dragonicle](img/Dragonicle.png "Dragonicle")
 
 
 ## Tips
@@ -95,9 +99,29 @@ ro.product.manufacturer=samsung
 # Enable faster boot
 ro.config.hw_quickpoweron=true
 
+# Disable built-in error reporting
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+
+ro.config.nocheckin=1
+
 # DNS
 net.dns1=8.8.8.8
 net.dns2=8.8.4.4
+
+# for battery
+pm.sleep_mode=2
+ro.ril.disable.power.collapse=0
+ro.semc.enable.fast_dormancy=true
+
+# for memory
+persist.sys.purgeable_assets=1
+
+# Fix red border
+persist.sys.strictmode.visual=0
+persist.sys.strictmode.disable=1
 ```
 
 ## ref.
@@ -117,3 +141,4 @@ net.dns2=8.8.4.4
 * Other
   * https://github.com/TrinityEmulator/TrinityEmulator
   * https://github.com/openthos/openthos
+  * https://github.com/cnrd/MagiskHide-Props-Config
