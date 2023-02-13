@@ -51,6 +51,11 @@ $ berry-os
 * If use MicroG, check Google device registration, Cloud Messaging, Google SafetyNet
 * If needed, enable native bridge
 
+## How to uninstall
+
+- sudo rpm -e berry-os*rpm
+- rm -rf ~/.local/share/berry-os/
+
 ## List of compatible applications
 
 * Genshin Impact

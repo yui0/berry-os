@@ -35,6 +35,7 @@ mkdir -p ${tdir}/opt/berry-os
 cp -a ${sys} ${ram} ${initrd} ${kernel} ${tdir}/opt/berry-os/
 cp -a berry-os.sh ${tdir}/opt/berry-os/
 cp -a berry-os.spec ${tdir}/opt/berry-os/
+cp -a data.zip ${tdir}/opt/berry-os/
 
 pushd ${tdir}
 
