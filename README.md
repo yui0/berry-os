@@ -71,6 +71,7 @@ $ berry-os
 * Epic Seven
 * Echocalypse
 * Guitar Girl
+* Asphalt 9
 
 * Arcaea
 * Astral Fable
@@ -88,6 +89,11 @@ $ berry-os
 
 
 ## Tips
+
+```
+# KMS
+echo 1 > /sys/kernel/mm/ksm/run
+```
 
 ```default.prop
 ro.adb.secure=1
@@ -134,11 +140,15 @@ persist.sys.strictmode.disable=1
 * Android-x86
   * https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/
   * https://www.android-x86.org/download
+  * https://osdn.net/projects/android-x86/releases/67834
+  * https://developer.android.com/topic/generic-system-image/releases
 * houdini
   * https://github.com/tony-cloud/houdini9
   * https://threedots.ovh/blog/2020/12/houdini-run-arm-32-bit-and-64-bit-applications-on-an-x86_64-system/
+  * https://github.com/m9rco/Genymotion_ARM_Translation
 * QEMU
   * https://github.com/Gamesmes90/qemu-android-x86/blob/master/qemu-android
+  * https://github.com/refutationalist/saur/blob/master/qemu-android-x86/qemu-android
 * Open GApps
   * https://github.com/geeks-r-us/anbox-playstore-installer
 * Bootanimations
@@ -147,3 +157,4 @@ persist.sys.strictmode.disable=1
   * https://github.com/TrinityEmulator/TrinityEmulator
   * https://github.com/openthos/openthos
   * https://github.com/cnrd/MagiskHide-Props-Config
+  * https://gist.github.com/wuhx/bfd814bba5f2523449f1
