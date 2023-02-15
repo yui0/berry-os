@@ -19,7 +19,14 @@ The android emulator based on android-x86 environment via QEMU and VirGL with li
 
 ## Download
 
-* RPM [https://github.com/yui0/berry-os/releases](https://github.com/yui0/berry-os/releases)
+* [RPM, Appimage](https://github.com/yui0/berry-os/releases)
+
+## How to use AppImage
+
+```
+chmod +x berry-os-*-x86_64.AppImage
+./berry-os-*-x86_64.AppImage
+```
 
 ## How to install QEMU-VirGL on Fedora 37
 
@@ -59,6 +66,7 @@ $ berry-os
 ## List of compatible applications
 
 * Genshin Impact
+* Houkai3rd
 * Ys VI
 * Dragonicle
 * Knights Chronicle
@@ -80,12 +88,14 @@ $ berry-os
 
 ## Screenshots
 
+![qemu](img/qemu.png "qemu")
 ![Soul Destiny](img/SoulDestiny.png "Soul Destiny")
 ![Astral Fable](img/AstralFable.png "Astral Fable")
 ![Alchemia Story](img/AlchemiaStory.png "Alchemia Story")
 ![Caravan Stories](img/CaravanStories.png "Caravan Stories")
 ![Caravan Stories](img/CaravanStories2.png "Caravan Stories")
 ![Dragonicle](img/Dragonicle.png "Dragonicle")
+![Houkai3rd](img/Houkai3rd.png "Houkai3rd")
 
 
 ## Tips
