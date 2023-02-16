@@ -3,10 +3,12 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/yui0/berry-os?style=social)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yui0/berry-os)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yui0/berry-os)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/yui0/berry-os)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/yui0/berry-os)](https://github.com/yui0/berry-os/releases)
 [![GPL2 License](https://img.shields.io/badge/license-GPL2-blue.svg?style=flat)](LICENSE)
 
 The android emulator based on android-x86 environment via QEMU and VirGL with libhoudini support.
+
+If you know some tips, please tell me.
 
 ## Features
 
@@ -16,6 +18,8 @@ The android emulator based on android-x86 environment via QEMU and VirGL with li
 * libhoudini support (arm64, arm)
 * Read + Write system
 * [Open GApps](https://opengapps.org/), [MicroG](https://microg.org/download.html) support
+* [Aurora Store](https://auroraoss.com/), [Aurora Dorid](https://f-droid.org/packages/com.aurora.adroid/) are pre-installed.
+* Mini Desktop, [Midori](https://f-droid.org/ja/packages/org.midorinext.android/) are pre-installed.
 
 ## Download
 
@@ -89,6 +93,8 @@ $ berry-os
 ## Screenshots
 
 ![qemu](img/qemu.png "qemu")
+![midori](img/midori.png "midori")
+![Genshin](img/Genshin.png "Genshin")
 ![Soul Destiny](img/SoulDestiny.png "Soul Destiny")
 ![Astral Fable](img/AstralFable.png "Astral Fable")
 ![Alchemia Story](img/AlchemiaStory.png "Alchemia Story")
