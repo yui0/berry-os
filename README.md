@@ -106,6 +106,8 @@ $ berry-os
 
 ## Tips
 
+- About tablet -> Build number (touch 7 times) -> Debug mode
+
 ```
 # KMS
 echo 1 > /sys/kernel/mm/ksm/run
@@ -149,6 +151,13 @@ persist.sys.purgeable_assets=1
 # Fix red border
 persist.sys.strictmode.visual=0
 persist.sys.strictmode.disable=1
+
+# no SD card
+ro.build.characteristics=nosdcard
+```
+
+```/vendor/build.prop
+ro.config.low_ram=true
 ```
 
 ## ref.
