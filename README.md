@@ -12,7 +12,7 @@ If you know some tips, please tell me.
 
 ## Features
 
-* Android 9 Pie
+* Android 9 Pie, Android 12 S
 * x86-based
 * Based on Android-x86 and Bliss OS
 * libhoudini support (arm64, arm)
@@ -93,6 +93,8 @@ $ berry-os
 ## Screenshots
 
 ![qemu](img/qemu.png "qemu")
+![PlayStore](img/PlayStore.png "PlayStore")
+![AuroraStore](img/AuroraStore.png "AuroraStore")
 ![midori](img/midori.png "midori")
 ![Genshin](img/Genshin.png "Genshin")
 ![Soul Destiny](img/SoulDestiny.png "Soul Destiny")
@@ -106,7 +108,10 @@ $ berry-os
 
 ## Tips
 
-- About tablet -> Build number (touch 7 times) -> Debug mode
+- Enter debug mode
+  - About tablet -> Build number (touch 7 times) -> Debug mode
+- Screenshot
+  - adb shell screencap -p > screen.png
 
 ```
 # KMS
