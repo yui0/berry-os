@@ -14,6 +14,7 @@ If you know some tips, please tell me.
 
 * Android 9 Pie, Android 12 S
 * x86-based
+* Uses KVM
 * Based on Android-x86 and Bliss OS
 * libhoudini support (arm64, arm)
 * Read + Write system
